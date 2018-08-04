@@ -1,14 +1,17 @@
 import random
 import asyncio
 import json
+import os
 import discord
 from discord import Game
 from discord.ext import commands
 from discord.ext.commands import Bot
 
+
+
 BOT_PREFIX = (",","$","<@472615266103328778> ","<@472615266103328778>")
 
-TOKEN = 'NDcyNjE1MjY2MTAzMzI4Nzc4.Dj1-Yg.MTs4DpRWBaww9hVShUsbRkOncCI'
+TOKEN = os.environ.get(Token)
 
 COLOUR=0xfbb716
 
