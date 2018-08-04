@@ -74,7 +74,7 @@ async def invite(ctx):
     )
     embed.set_author(name='Links!')
 
-    embed.add_field(name='*Invite me!*', value=" [➡️Tap heppre](https://discordapp.com/oauth2/authorize?client_id=472615266103328778&scope=bot)")
+    embed.add_field(name='*Invite me!*', value=" [➡️Tap here!](https://discordapp.com/oauth2/authorize?client_id=472615266103328778&scope=bot)")
     embed.add_field(name='*Visit my abode!*', value='[➡️Doorbell](https://discord.gg/JaTEP56)')
            
            
