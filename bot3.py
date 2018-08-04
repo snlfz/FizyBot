@@ -11,7 +11,7 @@ from discord.ext.commands import Bot
 
 BOT_PREFIX = (",","$","<@472615266103328778> ","<@472615266103328778>")
 
-TOKEN = os.environ.get(Token)
+TOKEN = os.environ.get('Token')
 
 COLOUR=0xfbb716
 
