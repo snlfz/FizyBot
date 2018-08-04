@@ -137,13 +137,15 @@ async def eight_ball(context):
     ]
     await bot.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
+
+
 #cointoss
 
 @bot.command(aliases=['cointoss','coinflip'],pass_context=True)
 async def coin(ctx):
     choice=random.randint(1,2)
     if choice == 1:
-	await bot.add_reaction(ctx.message,"🌑")
+	    await bot.add_reaction(ctx.message,"🌑")
     if choice == 2:
         await bot.add_reaction(ctx.message,"🌕")
 	
