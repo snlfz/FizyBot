@@ -54,7 +54,7 @@ async def help(ctx):
     )
     embed.set_author(name='Need Help? FizyBot to your Rescue!')
     embed.add_field(name="__**Utility**__", value="🔸`help` : *Opens up this Page*\n🔸`echo [...]` : *Repeats after you*\n🔸`purge [number]` : *clean chat*")
-    embed.add_field(name='__**Fun**__', value="🔸`playing [...]` : *Changes bot playing status for 20 seconds!*\n🔸`8ball [question]` : *Oldschool 8 ball responses*")
+    embed.add_field(name='__**Fun**__', value="🔸`playing [...]` : *Changes bot playing status for 20 seconds!*\n🔸`8ball [question]` : *Oldschool 8 ball responses*\n`cointoss` : *Definitely not Cointoss*")
     embed.add_field(name='__**Math**__', value="🔸`add [] []` : *does something*\n🔸`subtract [] []` : *does something else*\n🔸`multiply [] []` : *more stuff*\n🔸`divide [] []` : *and more.*\n🔸`square []` : *What even is my life*",)
     embed.add_field(name='__**Pointless**__', value="🔸`ping` : *Pong!*\n🔸`greet` : *Heya!*" )
  
@@ -137,7 +137,16 @@ async def eight_ball(context):
     ]
     await bot.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
+#cointoss
 
+@bot.command(aliases=['cointoss','coinflip'],pass_context=True)
+async def coin(ctx):
+    choice=random.randint(1,2)
+    if choice == 1:
+	await bot.add_reaction(ctx.message,"🌑")
+    if choice == 2:
+        await bot.add_reaction(ctx.message,"🌕")
+	
 
 #UTILITY COMMANDS#
 
