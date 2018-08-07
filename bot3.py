@@ -222,7 +222,7 @@ async def ping(ctx):
 
 
     #greet
-@bot.command(pass_context=True) 
+@bot.command(pass_context=True, aliases=['hi']) 
 async def greet(ctx): 
     await bot.say("<a:ablobwave:474874458780205066>  Hello, there!\n "+ ctx.message.author.mention ) 
 
