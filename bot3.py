@@ -7,24 +7,6 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 
 
-#----------------NOTES----------------#
-
-#dont forget to change help
-
-#change version in info each time
-#serverinfo(WIP)
-#userinfo (whois)
-#Embeds
-#whois
-#slots
-
-#info (heart)
-
-#help emojified
-
-#add new commands to help
-
-#ping posn change
 
 #------------------VARIABLES--------------#
 
@@ -34,7 +16,7 @@ BOT_PREFIX = (",","$","<@472615266103328778> ","<@472615266103328778>")
 TOKEN =os.environ.get('Token') 
 
 
-COLOUR=0x0
+COLOUR=0xc68a00
 
 
 
@@ -45,7 +27,7 @@ bot.remove_command('help')
 
 
 
-#----------------NEW COMMANDS------------------#
+
 
 	
 
