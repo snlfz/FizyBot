@@ -38,7 +38,7 @@ bot.remove_command('help')
     #Playing Status
     
 
-PLAYING="in a super secret garden"
+PLAYING="in a secret garden"
 
 @bot.event
 async def on_ready():
