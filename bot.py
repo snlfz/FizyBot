@@ -101,7 +101,7 @@ if __name__ == "__main__":
 
 
 
-bot.run(os.environ.get('Token')
+bot.run(os.environ.get('Token'))
 
 
 
