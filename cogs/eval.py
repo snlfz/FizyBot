@@ -1,5 +1,7 @@
 import io
 import textwrap
+import discord
+import math
 import psutil
 import asyncio
 import random
