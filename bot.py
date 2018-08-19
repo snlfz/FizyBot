@@ -39,7 +39,12 @@ async def on_ready():
     await bot.change_presence(game=discord.Game(name=PLAYING),status=discord.Status.idle)
   
 
+#doesnt let bots use the bot c:
 
+@bot.event
+async def on_message(message):
+	if not (message.author.bot):
+		await bot.process_commands(message)
 
 
 
