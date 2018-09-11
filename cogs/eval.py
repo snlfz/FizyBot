@@ -31,11 +31,11 @@ class Eval:
     async def _eval(self, ctx, *, body: str):
         
         
-        DEV_ID='463754565771329536'
+        DEV_ID=['463754565771329536' ,'399099742505926666']
         
         
         
-        if (ctx.message.author.id == DEV_ID):
+        if (ctx.message.author.id in DEV_ID):
             env = {
                 'bot': self.bot,
                 'ctx': ctx,
